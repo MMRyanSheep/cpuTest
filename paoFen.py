@@ -73,6 +73,7 @@ def quick_sort(btm, top):
         pygame.draw.rect(screen, (255, 0, 0), (key * 3, 0, 4, SCREEN_H), 0)
         pygame.draw.rect(screen, (255, 255, 255), (key * 3, SCREEN_H - L[key] * 2, 4, L[key] * 2), 0)
         pygame.draw.rect(screen, (255, 0, 0), (top * 3, SCREEN_H - L[top] * 2, 4, L[top] * 2), 0)
+        pygame.event.get()
         pygame.display.update()
         key = top
         while L[btm] < L[key]:
