@@ -11,7 +11,7 @@ def test(func, data):
     end = time.time()
     score = (end - start) // 0.0000008
     return int(score)
-def qucikSortTest(times):
+def qucikSortTest():
     start = time.time()
     quick_sort(0, len(L) - 1)
     end = time.time()
@@ -61,7 +61,7 @@ intTestScore = test(intAdd, 100000) * 3
 floatTestScore = test(floatAdd, 100000) * 3
 intDivideTestScore = test(intDivide, 100000) * 3
 bubbleSortTestScore = test(bubble_sort, 1000) // 4
-qucikSortTestScore = qucikSortTest(1000)
+qucikSortTestScore = qucikSortTest()
 score = intTestScore + floatTestScore + intDivideTestScore + bubbleSortTestScore + qucikSortTestScore
 print("yout CPU score is: ", score)
 print('Details: ', '\n', 'intTestScore: ', intTestScore, '\n', 'floatTestScore: ', floatTestScore \
