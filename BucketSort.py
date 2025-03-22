@@ -11,7 +11,7 @@ def bucket_sort(arr):
     buckets = [[] for _ in range(bucket_count)]
     for num in arr:
         index = int((num - min_value) / bucket_size)
-        print(index)
+        #print(index)
         buckets[index].append(num)
     sorted_array = []
     for bucket in buckets:
